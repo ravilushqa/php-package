@@ -10,7 +10,9 @@
   ],
   "scripts": {
     "phpcs": "phpcs",
-    "phpunit": "phpunit"
+    "phpcbf": "phpcbf",
+    "phpunit": "phpunit",
+    "test": "phpunit tests"
   },
   "autoload": {
     "psr-4": {
@@ -18,7 +20,9 @@
       "Php\\Package\\Tests\\": "tests"
     }
   },
-  "require": {},
+  "require": {
+    "tightenco/collect": "^5.5"
+  },
   "require-dev": {
     "phpunit/phpunit": "*",
     "squizlabs/php_codesniffer": "*",
